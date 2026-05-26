@@ -1,0 +1,15 @@
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/bin/Debug/net8.0/6-print_string
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/bin/Debug/net8.0/6-print_string.deps.json
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/bin/Debug/net8.0/6-print_string.runtimeconfig.json
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/bin/Debug/net8.0/6-print_string.dll
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/bin/Debug/net8.0/6-print_string.pdb
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.AssemblyInfoInputs.cache
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.AssemblyInfo.cs
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.csproj.CoreCompileInputs.cache
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.sourcelink.json
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.dll
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/refint/6-print_string.dll
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.pdb
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/6-print_string.genruntimeconfig.cache
+/Users/pegasus/Documents/alu-csharp/csharp-hello_world/6-print_string/obj/Debug/net8.0/ref/6-print_string.dll
