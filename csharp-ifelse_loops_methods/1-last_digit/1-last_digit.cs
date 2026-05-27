@@ -4,7 +4,8 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		int number = new Random().Next(-10000, 10001);
+		Random rndm = new Random();
+		int number = rndm.Next(-10000, 10000);
 		int lastDigit = number % 10;
 		if (lastDigit > 5)
 			Console.WriteLine("The last digit of {0} is {1} and is greater than 5", number, lastDigit);
