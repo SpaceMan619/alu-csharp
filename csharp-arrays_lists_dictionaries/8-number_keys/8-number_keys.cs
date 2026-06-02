@@ -6,9 +6,9 @@ class Dictionary
 	// Counts keys by iterating, since .Count() (the LINQ method) is not allowed.
 	public static int NumberOfKeys(System.Collections.Generic.Dictionary<string, string> myDict)
 	{
-		int count = 0;
-		foreach (var entry in myDict)
-			count++;
-		return count;
+		int total = 0;
+		foreach (var key in myDict.Keys)
+			total++;
+		return total;
 	}
 }

@@ -10,7 +10,7 @@ class Dictionary
 		var keys = new System.Collections.Generic.List<string>();
 		foreach (var entry in myDict)
 			keys.Add(entry.Key);
-		keys.Sort();
+		keys.Sort(StringComparer.Ordinal);
 		foreach (var key in keys)
 			Console.WriteLine("{0}: {1}", key, myDict[key]);
 	}
