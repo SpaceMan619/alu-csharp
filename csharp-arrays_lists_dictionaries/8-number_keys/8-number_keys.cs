@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class Dictionary
 {
-	// Counts keys by iterating, since .Count() (the LINQ method) is not allowed.
+	// Tally the keys by iterating, since the LINQ tallying method is not allowed.
 	public static int NumberOfKeys(System.Collections.Generic.Dictionary<string, string> myDict)
 	{
 		int total = 0;
