@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class List
 {
-	public static System.Collections.Generic.List<int>? CreatePrint(int size)
+	public static System.Collections.Generic.List<int> CreatePrint(int size)
 	{
 		if (size < 0)
 		{
