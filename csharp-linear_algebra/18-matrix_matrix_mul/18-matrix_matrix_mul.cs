@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides matrix calculations.</summary>
-public class MatrixMath
+class MatrixMath
 {
     /// <summary>Multiplies two compatible matrices.</summary>
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
@@ -22,10 +22,9 @@ public class MatrixMath
                 double sum = 0;
                 for (int i = 0; i < shared; i++)
                     sum += matrix1[row, i] * matrix2[i, column];
-                result[row, column] = Math.Round(sum, 2);
+                result[row, column] = sum;
             }
         }
         return result;
     }
 }
-

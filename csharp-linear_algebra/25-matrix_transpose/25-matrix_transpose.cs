@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides matrix calculations.</summary>
-public class MatrixMath
+class MatrixMath
 {
     /// <summary>Returns a matrix with its rows and columns exchanged.</summary>
     public static double[,] Transpose(double[,] matrix)
@@ -18,4 +18,3 @@ public class MatrixMath
         return result;
     }
 }
-

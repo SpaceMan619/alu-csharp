@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides vector calculations.</summary>
-public class VectorMath
+class VectorMath
 {
     /// <summary>Adds two vectors of the same supported size.</summary>
     public static double[] Add(double[] vector1, double[] vector2)
@@ -13,8 +13,7 @@ public class VectorMath
 
         double[] result = new double[vector1.Length];
         for (int i = 0; i < result.Length; i++)
-            result[i] = Math.Round(vector1[i] + vector2[i], 2);
+            result[i] = vector1[i] + vector2[i];
         return result;
     }
 }
-

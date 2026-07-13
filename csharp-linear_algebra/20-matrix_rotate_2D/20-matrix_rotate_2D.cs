@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides matrix transformations.</summary>
-public class MatrixMath
+class MatrixMath
 {
     /// <summary>Rotates each vector in a 2x2 matrix by an angle in radians.</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
@@ -13,14 +13,13 @@ public class MatrixMath
         double sine = Math.Sin(angle);
         double[,] result = new double[2, 2];
 
-        for (int column = 0; column < 2; column++)
+        for (int row = 0; row < 2; row++)
         {
-            result[0, column] = Math.Round(
-                cosine * matrix[0, column] - sine * matrix[1, column], 2);
-            result[1, column] = Math.Round(
-                sine * matrix[0, column] + cosine * matrix[1, column], 2);
+            result[row, 0] = Math.Round(
+                matrix[row, 0] * cosine - matrix[row, 1] * sine, 2);
+            result[row, 1] = Math.Round(
+                matrix[row, 0] * sine + matrix[row, 1] * cosine, 2);
         }
         return result;
     }
 }
-

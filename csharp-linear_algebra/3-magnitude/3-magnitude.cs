@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides vector calculations.</summary>
-public class VectorMath
+class VectorMath
 {
     /// <summary>Returns the magnitude of a two- or three-dimensional vector.</summary>
     public static double Magnitude(double[] vector)
@@ -16,4 +16,3 @@ public class VectorMath
         return Math.Round(Math.Sqrt(sum), 2);
     }
 }
-

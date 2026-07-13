@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides matrix calculations.</summary>
-public class MatrixMath
+class MatrixMath
 {
     /// <summary>Returns the determinant of a 2x2 or 3x3 matrix.</summary>
     public static double Determinant(double[,] matrix)
@@ -26,4 +26,3 @@ public class MatrixMath
         return Math.Round(result, 2);
     }
 }
-

@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides matrix calculations.</summary>
-public class MatrixMath
+class MatrixMath
 {
     /// <summary>Multiplies a 2x2 or 3x3 matrix by a scalar.</summary>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar)
@@ -14,8 +14,7 @@ public class MatrixMath
         double[,] result = new double[size, size];
         for (int row = 0; row < size; row++)
             for (int column = 0; column < size; column++)
-                result[row, column] = Math.Round(matrix[row, column] * scalar, 2);
+                result[row, column] = matrix[row, column] * scalar;
         return result;
     }
 }
-

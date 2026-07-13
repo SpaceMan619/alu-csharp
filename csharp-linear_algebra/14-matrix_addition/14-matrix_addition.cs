@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides matrix calculations.</summary>
-public class MatrixMath
+class MatrixMath
 {
     /// <summary>Adds two equally sized 2x2 or 3x3 matrices.</summary>
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
@@ -15,8 +15,7 @@ public class MatrixMath
         double[,] result = new double[size, size];
         for (int row = 0; row < size; row++)
             for (int column = 0; column < size; column++)
-                result[row, column] = Math.Round(
-                    matrix1[row, column] + matrix2[row, column], 2);
+                result[row, column] = matrix1[row, column] + matrix2[row, column];
         return result;
     }
 
@@ -27,4 +26,3 @@ public class MatrixMath
             (matrix.GetLength(0) == 2 || matrix.GetLength(0) == 3);
     }
 }
-

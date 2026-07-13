@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>Provides matrix calculations.</summary>
-public class MatrixMath
+class MatrixMath
 {
     /// <summary>Returns the inverse of an invertible 2x2 matrix.</summary>
     public static double[,] Inverse2D(double[,] matrix)
@@ -27,4 +27,3 @@ public class MatrixMath
         };
     }
 }
-
