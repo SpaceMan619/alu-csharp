@@ -15,10 +15,16 @@ class MatrixMath
 
         for (int row = 0; row < 2; row++)
         {
-            result[row, 0] = Math.Round(
-                matrix[row, 0] * cosine - matrix[row, 1] * sine, 2);
-            result[row, 1] = Math.Round(
-                matrix[row, 0] * sine + matrix[row, 1] * cosine, 2);
+            double first = 0;
+            double second = 0;
+
+            first = Math.Round(first + matrix[row, 0] * cosine, 2);
+            first = Math.Round(first - matrix[row, 1] * sine, 2);
+            second = Math.Round(second + matrix[row, 0] * sine, 2);
+            second = Math.Round(second + matrix[row, 1] * cosine, 2);
+
+            result[row, 0] = first;
+            result[row, 1] = second;
         }
         return result;
     }
