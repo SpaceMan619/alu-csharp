@@ -1,0 +1,38 @@
+using System;
+
+namespace Enemies
+{
+    /// <summary>
+    /// Defines a zombie enemy.
+    /// </summary>
+    public class Zombie
+    {
+        /// <summary>
+        /// The health points of the zombie.
+        /// </summary>
+        public int health;
+
+        /// <summary>
+        /// Initializes a new zombie with zero health.
+        /// </summary>
+        public Zombie()
+        {
+            health = 0;
+        }
+
+        /// <summary>
+        /// Initializes a new zombie with the supplied health.
+        /// </summary>
+        /// <param name="value">The initial health, which cannot be negative.</param>
+        /// <exception cref="ArgumentException">Thrown when <paramref name="value"/> is negative.</exception>
+        public Zombie(int value)
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Health must be greater than or equal to 0");
+            }
+
+            health = value;
+        }
+    }
+}
