@@ -1,9 +1,9 @@
 namespace Text
 {
-    /// <summary>Provides string operations.</summary>
-    public static class Str
+    ///<summary>Provides string operations.</summary>
+    public class Str
     {
-        /// <summary>Counts words in a camelCase string.</summary>
+        ///<summary>Counts words in a camelCase string.</summary>
         /// <param name="s">The camelCase text.</param>
         /// <returns>The number of words in the text.</returns>
         public static int CamelCase(string s)

@@ -2,10 +2,10 @@ using System;
 
 namespace Text
 {
-    /// <summary>Provides string operations.</summary>
-    public static class Str
+    ///<summary>Provides string operations.</summary>
+    public class Str
     {
-        /// <summary>Determines whether text is a case-insensitive palindrome.</summary>
+        ///<summary>Determines whether text is a case-insensitive palindrome.</summary>
         /// <param name="s">The text to inspect.</param>
         /// <returns><c>true</c> when the text reads the same backward and forward.</returns>
         public static bool IsPalindrome(string s)

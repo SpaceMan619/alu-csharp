@@ -2,10 +2,10 @@ using System;
 
 namespace MyMath
 {
-    /// <summary>Provides matrix operations.</summary>
-    public static class Matrix
+    ///<summary>Provides matrix operations.</summary>
+    public class Matrix
     {
-        /// <summary>Divides every matrix element by an integer.</summary>
+        ///<summary>Divides every matrix element by an integer.</summary>
         /// <param name="matrix">The matrix to divide.</param>
         /// <param name="num">The divisor.</param>
         /// <returns>A new divided matrix, or <c>null</c> for null input or a zero divisor.</returns>

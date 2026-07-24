@@ -2,10 +2,10 @@ using System.Collections.Generic;
 
 namespace MyMath
 {
-    /// <summary>Provides mathematical operations.</summary>
-    public static class Operations
+    ///<summary>Provides mathematical operations.</summary>
+    public class Operations
     {
-        /// <summary>Returns the greatest integer in a list.</summary>
+        ///<summary>Returns the greatest integer in a list.</summary>
         /// <param name="nums">The integers to inspect.</param>
         /// <returns>The maximum integer, or zero for a null or empty list.</returns>
         public static int Max(List<int> nums)

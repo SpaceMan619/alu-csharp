@@ -1,9 +1,9 @@
 namespace Text
 {
-    /// <summary>Provides string operations.</summary>
-    public static class Str
+    ///<summary>Provides string operations.</summary>
+    public class Str
     {
-        /// <summary>Finds the index of the first character that occurs once.</summary>
+        ///<summary>Finds the index of the first character that occurs once.</summary>
         /// <param name="s">A lowercase string.</param>
         /// <returns>The first unique character index, or <c>-1</c> when none exists.</returns>
         public static int UniqueChar(string s)
