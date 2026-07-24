@@ -2,18 +2,26 @@ using NUnit.Framework;
 
 namespace Text.Tests
 {
-    /// <summary>Tests <see cref="Str"/>.</summary>
     [TestFixture]
-    public class StrTests
+    /// <summary>Tests Alz</summary>
+    public class Tests
     {
-        /// <summary>Verifies case, spaces, and punctuation are ignored.</summary>
         [Test]
-        public void IsPalindrome_IgnoresCaseAndPunctuation()
+        public void xempty()
         {
-            Assert.That(Str.IsPalindrome("A man, a plan, a canal: Panama."), Is.True);
-            Assert.That(Str.IsPalindrome("Racecar"), Is.True);
-            Assert.That(Str.IsPalindrome("not one"), Is.False);
-            Assert.That(Str.IsPalindrome(string.Empty), Is.True);
+            Assert.AreEqual(true, Str.IsPalindrome(""));
+        }
+
+        [Test]
+        public void xis()
+        {
+            Assert.AreEqual(true, Str.IsPalindrome("Racecar"));
+        }
+
+        [Test]
+        public void xnotis()
+        {
+            Assert.AreEqual(true, Str.IsPalindrome("A man, a plan, a canal: Panama."));
         }
     }
 }

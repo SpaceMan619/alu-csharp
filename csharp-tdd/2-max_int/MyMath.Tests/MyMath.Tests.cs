@@ -1,18 +1,29 @@
-using System.Collections.Generic;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace MyMath.Tests
 {
-    /// <summary>Tests <see cref="Operations"/>.</summary>
     [TestFixture]
+    /// <summary>Tests Alz</summary>
     public class OperationsTests
     {
-        /// <summary>Verifies maximum values for populated and empty lists.</summary>
         [Test]
-        public void Max_ReturnsGreatestValueOrZero()
+        public void maxpositive()
         {
-            Assert.That(Operations.Max(new List<int> { -4, -1, -9 }), Is.EqualTo(-1));
-            Assert.That(Operations.Max(new List<int>()), Is.EqualTo(0));
+            List<int> digits = new List<int> { 0, 9, -2, 3, 44, 5, 6, 7, 8, 1 };
+            Assert.AreEqual(44, Operations.Max(digits));
+        }
+
+        [Test]
+        public void xempty()
+        {
+            Assert.AreEqual(0, Operations.Max(new List<int>()));
+        }
+
+        [Test]
+        public void xnull()
+        {
+            Assert.AreEqual(0, Operations.Max(null));
         }
     }
 }

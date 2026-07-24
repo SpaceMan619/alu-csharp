@@ -2,16 +2,38 @@ using NUnit.Framework;
 
 namespace Text.Tests
 {
-    /// <summary>Tests <see cref="Str"/>.</summary>
     [TestFixture]
-    public class StrTests
+    /// <summary>Tests Alz</summary>
+    public class Tests
     {
-        /// <summary>Verifies the first non-repeating character index.</summary>
         [Test]
-        public void UniqueChar_ReturnsFirstUniqueIndexOrMinusOne()
+        public void xfour()
         {
-            Assert.That(Str.UniqueChar("aabbcdde"), Is.EqualTo(4));
-            Assert.That(Str.UniqueChar("aabb"), Is.EqualTo(-1));
+            Assert.AreEqual(4, Str.UniqueChar("ababc"));
+        }
+
+        [Test]
+        public void xempty()
+        {
+            Assert.AreEqual(-1, Str.UniqueChar(""));
+        }
+
+        [Test]
+        public void xone()
+        {
+            Assert.AreEqual(0, Str.UniqueChar("d"));
+        }
+
+        [Test]
+        public void xnone()
+        {
+            Assert.AreEqual(-1, Str.UniqueChar("ddggttrrffttffddgg"));
+        }
+
+        [Test]
+        public void xnull()
+        {
+            Assert.AreEqual(-1, Str.UniqueChar(null));
         }
     }
 }

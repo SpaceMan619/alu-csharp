@@ -2,16 +2,26 @@ using NUnit.Framework;
 
 namespace Text.Tests
 {
-    /// <summary>Tests <see cref="Str"/>.</summary>
     [TestFixture]
-    public class StrTests
+    /// <summary>Tests Alz</summary>
+    public class Tests
     {
-        /// <summary>Verifies camelCase word counts.</summary>
         [Test]
-        public void CamelCase_ReturnsWordCount()
+        public void xfour()
         {
-            Assert.That(Str.CamelCase("saveChangesInTheEditor"), Is.EqualTo(5));
-            Assert.That(Str.CamelCase(string.Empty), Is.EqualTo(0));
+            Assert.AreEqual(0, Str.CamelCase(""));
+        }
+
+        [Test]
+        public void xtwo()
+        {
+            Assert.AreEqual(0, Str.CamelCase(null));
+        }
+
+        [Test]
+        public void xping()
+        {
+            Assert.AreEqual(5, Str.CamelCase("papaNoelEsUnZombie"));
         }
     }
 }

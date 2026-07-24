@@ -2,23 +2,32 @@ using NUnit.Framework;
 
 namespace MyMath.Tests
 {
-    /// <summary>Tests <see cref="Matrix"/>.</summary>
     [TestFixture]
+    /// <summary>Tests Alz</summary>
     public class MatrixTests
     {
-        /// <summary>Verifies element-wise integer division.</summary>
         [Test]
-        public void Divide_ReturnsNewDividedMatrix()
+        public void positivetwo()
         {
-            int[,] result = Matrix.Divide(new[,] { { 10, 8 }, { 6, 4 } }, 2);
-            Assert.That(result, Is.EqualTo(new[,] { { 5, 4 }, { 3, 2 } }));
+            int[,] matrix = new int[,] {{ 30, 40 }, { 5, 11 }, { 15, 6 }, { 7, 8 }};
+            int n = 2;
+            int[,] result = Matrix.Divide(matrix, n);
+            Assert.AreEqual(new int[,] {{ 15, 20 }, { 2, 5 }, { 7, 3 }, { 3, 4 }}, result);
         }
 
-        /// <summary>Verifies null input returns null.</summary>
         [Test]
-        public void Divide_NullMatrix_ReturnsNull()
+        public void zero()
         {
-            Assert.That(Matrix.Divide(null, 2), Is.Null);
+            int[,] matrix = new int[,] {{ 30, 40 }, { 5, 11 }, { 15, 6 }, { 7, 8 }};
+            int[,] result = Matrix.Divide(matrix, 0);
+            Assert.AreEqual(null, result);
+        }
+
+        [Test]
+        public void snull()
+        {
+            int[,] result = Matrix.Divide(null, 3);
+            Assert.AreEqual(null, result);
         }
     }
 }
