@@ -1,30 +1,32 @@
+using System;
 using System.Collections.Generic;
 
 namespace MyMath
 {
-    ///<summary>Provides mathematical operations.</summary>
+    /// <summary>
+    /// Provides basic mathematical operations.
+    /// </summary>
     public class Operations
     {
-        ///<summary>Returns the greatest integer in a list.</summary>
-        /// <param name="nums">The integers to inspect.</param>
-        /// <returns>The maximum integer, or zero for a null or empty list.</returns>
+        /// <summary>
+        /// Returns the maximum integer contained in <paramref name="nums"/>.
+        /// </summary>
+        /// <param name="nums">The list of integers to scan.</param>
+        /// <returns>
+        /// The largest integer in <paramref name="nums"/>, or <c>0</c> if the list is empty.
+        /// </returns>
         public static int Max(List<int> nums)
         {
             if (nums == null || nums.Count == 0)
-            {
                 return 0;
-            }
 
-            int maximum = nums[0];
-            for (int index = 1; index < nums.Count; index++)
+            int max = nums[0];
+            for (int i = 1; i < nums.Count; i++)
             {
-                if (nums[index] > maximum)
-                {
-                    maximum = nums[index];
-                }
+                if (nums[i] > max)
+                    max = nums[i];
             }
-
-            return maximum;
+            return max;
         }
     }
 }

@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 class Dictionary
 {
 	// Tracks the key whose value is the largest seen so far.
-	public static string BestScore(System.Collections.Generic.Dictionary<string, int> myList)
+	public static string BestScore(Dictionary<string, int> myList)
 	{
 		if (myList.Count == 0)
 			return "None";

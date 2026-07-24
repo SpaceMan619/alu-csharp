@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/0-new_project/0-new_project.csproj": {}
+    "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/0-new_project/0-new_project.csproj": {}
   },
   "projects": {
-    "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/0-new_project/0-new_project.csproj": {
+    "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/0-new_project/0-new_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/0-new_project/0-new_project.csproj",
+        "projectUniqueName": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/0-new_project/0-new_project.csproj",
         "projectName": "0-new_project",
-        "projectPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/0-new_project/0-new_project.csproj",
+        "projectPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/0-new_project/0-new_project.csproj",
         "packagesPath": "/Users/pegasus/.nuget/packages/",
-        "outputPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/0-new_project/obj/",
+        "outputPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/0-new_project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pegasus/.nuget/NuGet/NuGet.Config"

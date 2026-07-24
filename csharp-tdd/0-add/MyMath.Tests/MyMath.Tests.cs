@@ -1,50 +1,39 @@
 using NUnit.Framework;
+using MyMath;
 
 namespace MyMath.Tests
 {
-    [TestFixture]
-    ///<summary>Tests Alz</summary>
     public class OperationsTests
     {
         [Test]
-        public void positiveInt()
+        public void Add_TwoPositiveNumbers_ReturnsSum()
         {
-            int result = Operations.Add(1, 9);
-
-            Assert.AreEqual(10, result);
+            Assert.AreEqual(5, Operations.Add(2, 3));
         }
 
         [Test]
-        public void negativeInt()
+        public void Add_TwoNegativeNumbers_ReturnsSum()
         {
-            int result = Operations.Add(2, -12);
-
-            Assert.AreEqual(-10, result);
-        }
-        
-        [Test]
-        public void bothNegativeInt()
-        {
-            int result = Operations.Add(-10, -10);
-
-            Assert.AreEqual(-20, result);
+            Assert.AreEqual(-7, Operations.Add(-3, -4));
         }
 
         [Test]
-        public void CeroInt()
+        public void Add_PositiveAndNegative_ReturnsSum()
         {
-            int result = Operations.Add(0, -30);
-
-            Assert.AreEqual(-30, result);
+            Assert.AreEqual(-1, Operations.Add(4, -5));
         }
 
-         [Test]
-        
-        public void BothCeroInt()
+        [Test]
+        public void Add_WithZero_ReturnsOtherNumber()
         {
-            int result = Operations.Add(0, 0);
+            Assert.AreEqual(7, Operations.Add(0, 7));
+            Assert.AreEqual(7, Operations.Add(7, 0));
+        }
 
-            Assert.AreEqual(0, result);
+        [Test]
+        public void Add_TwoZeros_ReturnsZero()
+        {
+            Assert.AreEqual(0, Operations.Add(0, 0));
         }
     }
 }

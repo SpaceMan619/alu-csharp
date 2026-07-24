@@ -1,1 +1,1 @@
-# C# - if/else, loops, functions
+# C# - If/Else, Loops, Methods

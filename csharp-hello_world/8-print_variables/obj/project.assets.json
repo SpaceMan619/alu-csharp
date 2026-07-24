@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/8-print_variables/8-print_variables.csproj",
+      "projectUniqueName": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/8-print_variables/8-print_variables.csproj",
       "projectName": "8-print_variables",
-      "projectPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/8-print_variables/8-print_variables.csproj",
+      "projectPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/8-print_variables/8-print_variables.csproj",
       "packagesPath": "/Users/pegasus/.nuget/packages/",
-      "outputPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/8-print_variables/obj/",
+      "outputPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/8-print_variables/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pegasus/.nuget/NuGet/NuGet.Config"

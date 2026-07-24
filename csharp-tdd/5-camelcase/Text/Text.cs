@@ -1,28 +1,34 @@
+using System;
+
 namespace Text
 {
-    ///<summary>Provides string operations.</summary>
+    /// <summary>
+    /// Provides string-related utility methods.
+    /// </summary>
     public class Str
     {
-        ///<summary>Counts words in a camelCase string.</summary>
-        /// <param name="s">The camelCase text.</param>
-        /// <returns>The number of words in the text.</returns>
+        /// <summary>
+        /// Counts the number of words in a camelCase string.
+        /// The first word starts in lowercase; every subsequent word starts
+        /// with an uppercase letter.
+        /// </summary>
+        /// <param name="s">The camelCase string to inspect.</param>
+        /// <returns>
+        /// The number of words in <paramref name="s"/>, or <c>0</c> if
+        /// <paramref name="s"/> is <c>null</c> or empty.
+        /// </returns>
         public static int CamelCase(string s)
         {
             if (string.IsNullOrEmpty(s))
-            {
                 return 0;
-            }
 
-            int words = 1;
-            for (int index = 0; index < s.Length; index++)
+            int count = 1;
+            for (int i = 0; i < s.Length; i++)
             {
-                if (char.IsUpper(s[index]))
-                {
-                    words++;
-                }
+                if (char.IsUpper(s[i]))
+                    count++;
             }
-
-            return words;
+            return count;
         }
     }
 }

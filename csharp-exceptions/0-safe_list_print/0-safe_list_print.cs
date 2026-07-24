@@ -1,23 +1,23 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-public class List
+class List
 {
     public static int SafePrint(List<int> myList, int n)
     {
         int printed = 0;
 
-        try
+        for (int i = 0; i < n; i++)
         {
-            for (int i = 0; i < n; i++)
+            try
             {
                 Console.WriteLine(myList[i]);
                 printed++;
             }
-        }
-        catch (ArgumentOutOfRangeException)
-        {
-            // Reaching the end of the list is an expected boundary case.
+            catch (ArgumentOutOfRangeException)
+            {
+                break;
+            }
         }
 
         return printed;

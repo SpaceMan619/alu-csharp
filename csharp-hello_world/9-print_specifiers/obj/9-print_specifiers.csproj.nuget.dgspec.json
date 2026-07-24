@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {}
+    "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {}
   },
   "projects": {
-    "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {
+    "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
+        "projectUniqueName": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
         "projectName": "9-print_specifiers",
-        "projectPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
+        "projectPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/9-print_specifiers/9-print_specifiers.csproj",
         "packagesPath": "/Users/pegasus/.nuget/packages/",
-        "outputPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/9-print_specifiers/obj/",
+        "outputPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/9-print_specifiers/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pegasus/.nuget/NuGet/NuGet.Config"

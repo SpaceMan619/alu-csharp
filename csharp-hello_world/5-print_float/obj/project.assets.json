@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/5-print_float/5-print_float.csproj",
+      "projectUniqueName": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/5-print_float/5-print_float.csproj",
       "projectName": "5-print_float",
-      "projectPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/5-print_float/5-print_float.csproj",
+      "projectPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/5-print_float/5-print_float.csproj",
       "packagesPath": "/Users/pegasus/.nuget/packages/",
-      "outputPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/5-print_float/obj/",
+      "outputPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/5-print_float/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pegasus/.nuget/NuGet/NuGet.Config"

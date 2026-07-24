@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
+      "projectUniqueName": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
       "projectName": "11-concat_edges",
-      "projectPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
+      "projectPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/11-concat_edges/11-concat_edges.csproj",
       "packagesPath": "/Users/pegasus/.nuget/packages/",
-      "outputPath": "/Users/pegasus/Documents/alu-csharp/csharp-hello_world/11-concat_edges/obj/",
+      "outputPath": "/private/tmp/alu-csharp-checkout.HZrVoL/csharp-hello_world/11-concat_edges/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pegasus/.nuget/NuGet/NuGet.Config"

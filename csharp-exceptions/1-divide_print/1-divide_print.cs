@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-public class Int
+class Int
 {
     public static void divide(int a, int b)
     {
@@ -16,7 +16,7 @@ public class Int
         }
         finally
         {
-            Console.WriteLine($"{a} / {b} = {result}");
+            Console.WriteLine("{0} / {1} = {2}", a, b, result);
         }
     }
 }

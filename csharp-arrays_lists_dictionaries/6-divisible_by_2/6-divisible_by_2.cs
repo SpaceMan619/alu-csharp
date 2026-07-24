@@ -1,13 +1,12 @@
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 class List
 {
-	public static System.Collections.Generic.List<bool> DivisibleBy2(System.Collections.Generic.List<int> myList)
-	{
-		var result = new System.Collections.Generic.List<bool>();
-		foreach (int n in myList)
-			result.Add(n % 2 == 0);
-		return result;
-	}
+   public static List<bool> DivisibleBy2(List<int> myList)
+   {
+    List<bool> divisible = new List<bool>();
+    for (int i = 0; i < myList.Count; i++)
+        divisible.Add(myList[i] % 2 == 0);
+    return divisible;
+    }
 }

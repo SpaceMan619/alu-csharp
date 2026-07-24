@@ -1,33 +1,69 @@
+using System;
+using System.IO;
 using NUnit.Framework;
+using MyMath;
 
 namespace MyMath.Tests
 {
-    [TestFixture]
-    /// <summary>Tests Alz</summary>
     public class MatrixTests
     {
         [Test]
-        public void positivetwo()
+        public void Divide_NullMatrix_ReturnsNull()
         {
-            int[,] matrix = new int[,] {{ 30, 40 }, { 5, 11 }, { 15, 6 }, { 7, 8 }};
-            int n = 2;
-            int[,] result = Matrix.Divide(matrix, n);
-            Assert.AreEqual(new int[,] {{ 15, 20 }, { 2, 5 }, { 7, 3 }, { 3, 4 }}, result);
+            Assert.IsNull(Matrix.Divide(null, 2));
         }
 
         [Test]
-        public void zero()
+        public void Divide_ByZero_ReturnsNullAndPrintsMessage()
         {
-            int[,] matrix = new int[,] {{ 30, 40 }, { 5, 11 }, { 15, 6 }, { 7, 8 }};
-            int[,] result = Matrix.Divide(matrix, 0);
-            Assert.AreEqual(null, result);
+            int[,] m = { { 1, 2 }, { 3, 4 } };
+            string output;
+            int[,] result;
+            using (var sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                result = Matrix.Divide(m, 0);
+                output = sw.ToString();
+            }
+            var stdout = new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true };
+            Console.SetOut(stdout);
+
+            Assert.IsNull(result);
+            Assert.IsTrue(output.Contains("Num cannot be 0"));
         }
 
         [Test]
-        public void snull()
+        public void Divide_NormalCase_ReturnsDividedMatrix()
         {
-            int[,] result = Matrix.Divide(null, 3);
-            Assert.AreEqual(null, result);
+            int[,] m = { { 10, 20 }, { 30, 40 } };
+            int[,] expected = { { 5, 10 }, { 15, 20 } };
+            Assert.AreEqual(expected, Matrix.Divide(m, 2));
+        }
+
+        [Test]
+        public void Divide_IntegerTruncation_TruncatesTowardZero()
+        {
+            int[,] m = { { 7, 8 }, { 9, 10 } };
+            int[,] expected = { { 2, 2 }, { 3, 3 } };
+            Assert.AreEqual(expected, Matrix.Divide(m, 3));
+        }
+
+        [Test]
+        public void Divide_NegativeDivisor_ReturnsNegatedQuotients()
+        {
+            int[,] m = { { 4, -6 }, { 8, -10 } };
+            int[,] expected = { { -2, 3 }, { -4, 5 } };
+            Assert.AreEqual(expected, Matrix.Divide(m, -2));
+        }
+
+        [Test]
+        public void Divide_EmptyMatrix_ReturnsEmptyMatrix()
+        {
+            int[,] m = new int[0, 0];
+            int[,] result = Matrix.Divide(m, 5);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(0, result.GetLength(0));
+            Assert.AreEqual(0, result.GetLength(1));
         }
     }
 }

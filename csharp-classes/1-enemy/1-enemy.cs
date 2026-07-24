@@ -11,7 +11,8 @@ namespace Enemies
         public int health;
 
         /// <summary>
-        /// Initializes a new zombie with zero health.
+        /// Initializes a new instance of the <see cref="Zombie"/> class
+        /// with its health set to 0.
         /// </summary>
         public Zombie()
         {

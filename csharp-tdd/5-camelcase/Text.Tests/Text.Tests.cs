@@ -1,27 +1,51 @@
 using NUnit.Framework;
+using Text;
 
 namespace Text.Tests
 {
-    [TestFixture]
-    /// <summary>Tests Alz</summary>
-    public class Tests
+    public class StrTests
     {
         [Test]
-        public void xfour()
+        public void CamelCase_EmptyString_ReturnsZero()
         {
             Assert.AreEqual(0, Str.CamelCase(""));
         }
 
         [Test]
-        public void xtwo()
+        public void CamelCase_NullString_ReturnsZero()
         {
             Assert.AreEqual(0, Str.CamelCase(null));
         }
 
         [Test]
-        public void xping()
+        public void CamelCase_SingleLowercaseWord_ReturnsOne()
         {
-            Assert.AreEqual(5, Str.CamelCase("papaNoelEsUnZombie"));
+            Assert.AreEqual(1, Str.CamelCase("hello"));
+        }
+
+        [Test]
+        public void CamelCase_TwoWords_ReturnsTwo()
+        {
+            Assert.AreEqual(2, Str.CamelCase("helloWorld"));
+        }
+
+        [Test]
+        public void CamelCase_FiveWords_ReturnsFive()
+        {
+            Assert.AreEqual(5, Str.CamelCase("saveChangesInTheEditor"));
+        }
+
+        [Test]
+        public void CamelCase_SingleLetter_ReturnsOne()
+        {
+            Assert.AreEqual(1, Str.CamelCase("a"));
+        }
+
+        [Test]
+        public void CamelCase_ConsecutiveCapitals_CountsEachAsAWord()
+        {
+            // Each capital starts a new word: get, H, T, T, P, Response = 6
+            Assert.AreEqual(6, Str.CamelCase("getHTTPResponse"));
         }
     }
 }

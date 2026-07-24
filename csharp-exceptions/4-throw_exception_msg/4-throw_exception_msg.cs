@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-public class Except
+class Except
 {
     public static void ThrowMsg(string msg)
     {
